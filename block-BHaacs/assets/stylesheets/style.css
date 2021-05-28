@@ -1,0 +1,467 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: rgb(89, 191, 194);
+  --secondary: rgb(66, 158, 161);
+  --tertiory: rgb(213, 229, 229);
+  --darktext: rgb(25, 25, 83);
+  --lighttext: rgb(77, 79, 80);
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+.flex-100 {
+  flex: 0 1 100%;
+}
+
+/*Buttons*/
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.35rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.btn-secondary {
+  color: var(--darktext);
+  background-color: #fff;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Position*/
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: rgb(27, 27, 109);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--darktext);
+}
+
+h4 {
+  font-size: 1.6rem;
+font-weight: 600;
+  color: var(--darktext);
+}
+
+
+/* Home Page */
+
+/* Header */
+
+.header {
+  background-color: var(--primary);
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.header nav ul li a {
+  color: #fff;
+  margin-left: 2rem;
+}
+
+/* Main */
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: var(--primary);
+  height: 80vh;
+}
+
+.hero > a {
+  font-size: 1.7rem;
+  color: rgb(6, 6, 71);
+  font-weight: 600;
+}
+
+.hero > div {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: -5rem;
+  margin-bottom: -10rem;
+}
+
+/* .hero img {
+background: rgba(0,0,0,.1);
+background-blend-mode: color-burn;
+} */
+
+
+.documents {
+  padding-top: 14rem;
+  padding-bottom: 2rem;
+}
+
+.documents nav a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: rgb(158, 158, 158);
+}
+
+/* Features Section*/
+
+
+.features article {
+  padding-top: 5rem;
+  border-top: 3px solid rgb(180, 175, 175);
+}
+
+.features article h3{
+    text-align: start;
+}
+
+.btn-special{
+    display: inline-block ;
+    height: 2.4rem;
+    padding: .2rem 2rem;
+    color:#fff;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.btn-special::before{
+    content: " ";
+    display: block;
+     width:2rem;
+     height: 2rem;
+     background-color: #fff;
+     transform: rotate(45deg);
+     position: absolute;
+     left: -1rem;
+     top:2.5px;
+
+ }
+
+.btn-special::after{
+   content: " ";
+   display: inline-block;
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: var(--primary);
+    transform: rotate(45deg);
+    position: absolute;
+    right: -.85rem;
+    top:5.25px;
+}
+
+/* Stats */
+
+table {
+  margin: 2rem auto;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+thead {
+  background-color: var(--secondary);
+  color: #fff;
+  font-size: 1.4rem;
+  border: 1px solid rgb(146, 144, 144);
+}
+
+tbody{
+    border: 1px solid rgb(146, 144, 144);
+}
+
+thead td {
+  padding: 0.5rem;
+  flex: 0 1 25%;
+}
+
+tbody td {
+  border: 1px solid rgb(146, 144, 144);
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex: 0 1 25%;
+  color: var(--lighttext);
+}
+
+tbody tr:nth-child(2n){
+    background-color: var(--tertiory);
+}
+
+/* Programs */
+
+.program article{
+    border: 4px solid rgb(194, 189, 189);
+    border-radius: 1.2rem;
+    padding: 1rem;
+}
+
+.slider{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .2rem;
+    width: 3.8rem;
+    height: 2rem;
+    border-radius: .9rem;
+    background-color: rgb(187,236,236);
+    margin: 2rem 1rem;
+}
+
+.slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.vline{
+    display: block;
+    width: 1px;
+    height:.80rem;
+    border: 2px solid white;
+}
+
+
+
+.program article h4, .program article p{
+    text-align: center;
+}
+
+.program article a{
+ display: block;
+ border: 3px solid rgb(185, 182, 182);
+ text-align: center;
+}
+
+.program article> span{
+    color:var(--primary);
+    font-size: 2rem;
+    font-weight: 500;
+    display:block;
+    text-align: center;
+    margin: 1.2rem auto;
+    padding: 1rem;
+    border-bottom: 3px solid rgb(194, 189, 189);
+}
+
+.program article> span::before{
+   content: "$";
+   font-size: 1.3rem;
+   font-weight: 600;
+   color:var(--primary);
+}
+
+.program article> span::after{
+    content: "/Month";
+    font-size: 1.2rem;
+    color:var(--lighttext);
+ }
+
+ .program article ul >li{
+     margin-bottom: 1rem;
+     font-size: 1.4rem;
+ }
+ 
+ .program article ul img{
+     margin-right: .75rem;
+ }
+
+ img[src$="cross.png"]+span{
+     color: gray;
+ }
+
+
+/* Trail  */
+
+.trial {
+  background-color: var(--primary);
+  border-radius: 2.5rem;
+  padding: 3rem;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.trial> h3{
+   color:#fff;
+}
+
+
+
+
+/* Footer */
+.footer{
+    padding: 0 2rem;
+}
+
+.footer, .footer a {
+ color: var(--lighttext);
+}
+
+.footer h4, .footer h3{
+    color: var(--darktext);
+    text-align: start;
+}
+
+.footer i{
+    width: 2rem;
+    height:2rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin : 1rem auto;
+    margin-right: 2rem;
+    
+    color:#fff;
+}
