@@ -24,6 +24,8 @@
     <header class="header">
       <div class="container flex justify-between align-center">
         <h5 class="logo">TrackL</h5>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" id="bars"><i class="fas fa-bars"></i></label>
         <nav>
           <ul class="flex justify-between align-center">
             <li><a href="#">Features</a></li>
@@ -32,8 +34,10 @@
             <li><a href="#">Help</a></li>
           </ul>
         </nav>
+       
       </div>
     </header>
+
     <main>
       <section class="hero padding">
         <h1>
@@ -53,26 +57,26 @@
       <!--Documents Section-->
       <section class="documents container padding">
         <nav>
-          <ul class="flex justify-between align-center font-0">
-            <li>
+          <ul class="flex justify-between align-center font-0 flex-wrap">
+            <li class="flex-20">
               <a href="#.pdf"
                 ><img src="./assets/media/pdf.png" alt="Image Here" />
                 <span>PDF FILE</span>
               </a>
             </li>
-            <li>
+            <li  class="flex-20">
               <a href="#.doc"
                 ><img src="./assets/media/word.png" alt="Image Here" />
                 <span>WORD FILE</span></a
               >
             </li>
-            <li>
+            <li  class="flex-20">
               <a href="#.jpg"
                 ><img src="./assets/media/image.png" alt="Image Here" />
                 <span>IMAGE FILE</span></a
               >
             </li>
-            <li>
+            <li  class="flex-20">
               <a href="#.mp4"
                 ><img src="./assets/media/video.png" alt="Image Here" />
                 <span>VIDEO FILE</span></a
@@ -84,7 +88,7 @@
 
       <!--Features-->
       <section class="features padding">
-        <article class="container flex justify-between align-start">
+        <article class="container flex justify-between align-start flex-wrap">
           <div class="flex-40">
             <h3>Moniter Your Learning And Improve It</h3>
             <p>
@@ -173,7 +177,8 @@
        
         </div>
 
-        <div class="flex justify-between align-center">
+        <div class="flex justify-between align-center flex-wrap">
+
           <article class="flex-40">
             <h3>Basic</h3>
             <p>
@@ -252,7 +257,7 @@
       </section>
 
       <!--Trial Section-->
-      <section class="container padding">
+      <section class="container padding ">
         <div class="trial">
           <h3>Start Your 30 Days Trial Now!</h3>
           <a href="#" class="btn btn-secondary">Get Started</a>
@@ -262,7 +267,7 @@
     </main>
 
     <!--Footer-->
-    <footer class=" footer container flex justify-between align-start padding">
+    <footer class=" footer container flex justify-between align-start padding flex-wrap">
       <div class="flex-25">
         <h3>TrackL</h3>
         <p>Far far away, behind word mountains, far from the countries.</p>
@@ -287,8 +292,8 @@
         </nav>
       </div>
 
-      <div class="flex justify-between align-start flex-60">
-        <nav class="features">
+      <div class="flex justify-between align-start flex-60 flex-wrap">
+        <nav class="features flex-30">
           <h4>Features</h4>
           <ul>
             <li><a href="#">Calander</a></li>
@@ -297,7 +302,7 @@
             <li><a href="#">Schedule</a></li>
           </ul>
         </nav>
-        <nav class="suppot">
+        <nav class="suppot flex-30">
            <h4>Support</h4> 
           <ul>
             <li><a href="#">About Us</a></li>
@@ -306,7 +311,7 @@
             <li><a href="#">Security</a></li>
           </ul>
         </nav>
-        <nav class="contact">
+        <nav class="contact flex-30">
             <h4>Contact</h4>
           <ul>
             <li><a href="#">hello@track.io</a></li>
