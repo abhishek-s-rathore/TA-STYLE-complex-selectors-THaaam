@@ -213,31 +213,32 @@ font-weight: 600;
 .hero {
   text-align: center;
   background-color: var(--primary);
-  height: 80vh;
+  height: 40rem;
 }
 
 .hero > a {
   font-size: 1.7rem;
   color: rgb(6, 6, 71);
   font-weight: 600;
+  position: relative;
+  z-index:97;
 }
-
-.hero > div {
-  width: 55%;
-  margin: 0 auto;
-  margin-top: -5rem;
-  margin-bottom: -10rem;
-}
-
-/* .hero img {
-background: rgba(0,0,0,.1);
-background-blend-mode: color-burn;
-} */
 
 
 .documents {
-  padding-top: 14rem;
   padding-bottom: 2rem;
+}
+
+
+.documents > div {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: -28rem;
+ 
+}
+
+.documents nav {
+  margin-top: 10rem;
 }
 
 .documents nav a {
@@ -247,9 +248,8 @@ background-blend-mode: color-burn;
   color: rgb(158, 158, 158);
 }
 
+
 /* Features Section*/
-
-
 .features article {
   padding-top: 5rem;
   border-top: 3px solid rgb(180, 175, 175);
@@ -471,11 +471,41 @@ tbody tr:nth-child(2n){
   display: none;
 }
 
+/* Responsive (Layout Below 1080px) */
+@media all and (max-width: 1080px)  {
+  html {
+    font-size: 13px;
+  }  
+
+  .documents > div {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -28rem;
+   margin-bottom: -5rem;
+  }
+
+.documents nav{
+ margin-top: 5rem;
+}
+
+}
+
 /* Responsive (Layout Below 768px) */
 @media all and (max-width: 768px)  {
   html {
     font-size: 12px;
   }  
+
+  .documents > div {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -16rem;
+   margin-bottom: -5rem;
+  }
+
+.documents nav{
+ margin-top: 5rem;
+}
    
 .flex-20, .flex-25, .flex-30, .flex-32, .flex-40, .flex-48, .flex-50, .flex-60{
   flex: 0 1 90%;  
